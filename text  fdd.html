@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" name="n1" id="n1" onkeyup="sync()">
+<input type="text" name="n2" id="n2"/>
+
+<script>
+function myFunction() {
+ $('txtbox').val()=$(this).val();
+}
+function sync()
+{
+  var n1 = document.getElementById('n1');
+  var n2 = document.getElementById('n2');
+  n2.value = n1.value;
+}
+</script>
+
+</body>
+</html>
+
